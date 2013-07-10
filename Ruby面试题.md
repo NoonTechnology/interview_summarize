@@ -26,9 +26,16 @@
 
 * [kind_of?, is_a?, instance_of? 的区别](http://darkbaby123.iteye.com/blog/604678)
  * obj.kind_of? (klass)  ->  true or false  
- 判断klass是否是obj的类，或者超类，或者被mixin的模块
+ 判断klass是否是obj的类，或者obj类的超类，或者obj类被mixin的模块
  * obj.is_a? (klass)  ->  true or false  
  和kind_of? 一样
  * obj.instance_of? (klass)  ->  true of false  
  判断obj是否是由klass生成的实例
 
+* Ruby主要数据结构以及特点
+  * Set  
+  Set实现了由若干个无序且不重复的对象所组成的集合的功能。它既包含Array的运算功能,同时又兼有Hash的高速搜索功能。
+  * Array  
+  数组的元素可以是任意的Ruby对象
+  * Hash  
+  通过哈希表,您可以将一个任意类型的对象同另一个任意类型的对象联系起来
