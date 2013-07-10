@@ -23,3 +23,12 @@
   这个方法很简单，直接返回方法调用者。返回值和原对象没有区别。
   * arr.to_a   ->  arr  
   这个方法复杂一点。首先，当arr是Array的实例时，直接返回arr；当arr是Array子类的实例时，会先使用 to_ary 获得一个数组，然后根据这个数组创建一个新数组（就是复制）返回。
+
+* [kind_of?, is_a?, instance_of? 的区别](http://darkbaby123.iteye.com/blog/604678)
+ * obj.kind_of? (klass)  ->  true or false  
+ 判断klass是否是obj的类，或者超类，或者被mixin的模块
+ * obj.is_a? (klass)  ->  true or false  
+ 和kind_of? 一样
+ * obj.instance_of? (klass)  ->  true of false  
+ 判断obj是否是由klass生成的实例
+
