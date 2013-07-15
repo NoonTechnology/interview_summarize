@@ -51,4 +51,4 @@ puts binary_search(ary, 8)
 
 # 降序列表不适合以上算法
 # ary = [1,2,3,4,5,6,7,8,9].reverse
-# puts binary_search(ary, 8)
+# puts binary_search(ary, 8)  #=> -1 
