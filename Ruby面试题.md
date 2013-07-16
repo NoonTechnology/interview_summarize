@@ -40,3 +40,8 @@
   数组的元素可以是任意的Ruby对象
   * Hash  
   通过哈希表,您可以将一个任意类型的对象同另一个任意类型的对象联系起来
+* Ruby文件操作
+  * File.new
+  * File.open
+  * file.puts #写入内容
+  * Dir['/home/simlegate'].each {|x|p x}  #查找目录下所有文件及文件夹

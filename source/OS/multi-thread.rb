@@ -22,3 +22,4 @@ t2 = Thread.new {thread_2}
 t1.join
 t2.join
 puts "End At #{Time.now}"
+
