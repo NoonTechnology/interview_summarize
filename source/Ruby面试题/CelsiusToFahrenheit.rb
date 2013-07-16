@@ -3,7 +3,7 @@ puts 'A for Celsius to Fahrenheit'
 puts 'B for Fahrenheit to Celsius'
 STDOUT.flush  
 string0 = gets.chomp  
-if string0 == 'A' || string0 == 'a'
+if string0.downcase == 'a'
   puts 'Enter the temperature in Celsuis'
   STDOUT.flush
   string1 = gets.chomp
@@ -11,7 +11,7 @@ if string0 == 'A' || string0 == 'a'
   y = 32+(9.0/5)*x
   puts 'The temperature in Fahrenheit is '+y.to_s
 else
-  if string0 == 'B'|| string0 == 'b'
+  if string0.downcase == 'b'
     puts 'Enter the temperature in Fahrenheit'
     STDOUT.flush
     string2 = gets.chomp
