@@ -1,5 +1,6 @@
 * [ruby面试题+笔试题](http://www.mianwww.com/html/category/it-interview/ruby)
 * [ruby笔试题](http://www.jobui.com/mianshiti/it/ruby/?n=1)
+* Ruby中的对象模型
 * Ruby中类和模块的区别
   * 模块和类的区别在于，模块不能实例化，类不能include
 
@@ -78,3 +79,9 @@
   * puts 输出内容后，会自动换行(如果内容参数为空，则仅输出一个换行符号)；另外如果内容参数中有转义符，输出时将先处理转义再输出
   * p 基本与puts相同，但不会处理参数中的转义符号
   * print 基本与puts相同，但输出内容后，不会自动在结尾加上换行符
+
+* [Ruby方法访问权限](http://blog.csdn.net/magneto7/article/details/9150445)
+  * **public**       可以被任何实例对象调用，不存在访问控制；
+  * **protected**    可以被定义它的类和其子类访问，可以在类中或子类中指定给实例对象；
+  * **private**      可以被定义它的类和其子类访问，不能被实例对象调用。
+  方法默认都是公有的（initialize方法除外，它永远是私有的）
