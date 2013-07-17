@@ -1,6 +1,6 @@
 * [ruby面试题+笔试题](http://www.mianwww.com/html/category/it-interview/ruby)
 * [ruby笔试题](http://www.jobui.com/mianshiti/it/ruby/?n=1)
-* Ruby中的对象模型
+* Ruby中的对象模型  ???
 * Ruby中类和模块的区别
   * 模块和类的区别在于，模块不能实例化，类不能include
 
@@ -82,6 +82,16 @@
 
 * [Ruby方法访问权限](http://blog.csdn.net/magneto7/article/details/9150445)
   * **public**       可以被任何实例对象调用，不存在访问控制；
-  * **protected**    可以被定义它的类和其子类访问，可以在类中或子类中指定给实例对象；
+  * **protected**    可以被定义它的类和其子类访问，可以在类中或子类中指定给实例对象； ????
   * **private**      可以被定义它的类和其子类访问，不能被实例对象调用。
   方法默认都是公有的（initialize方法除外，它永远是私有的）
+
+  代码：source/Ruby面试题/方法访问权限.rb
+
+* Ruby 的所有时间对象都可像数字一样用在值域中。Date和DateTime对象按天递增，而Time对象按秒递增
+* Ruby单件方法和单件类(单件的别名特殊)
+
+* [File.open和File.new的区别](http://blog.csdn.net/zl728/article/details/4994718)
+  * File.open后不接代码块和File.new效果一样
+  * 反之,File.open在发生异常时会自动关闭file
+  * 反之,File.open返回的结果为代码块的值
