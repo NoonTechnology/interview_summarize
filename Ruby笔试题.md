@@ -1,6 +1,9 @@
 * [ruby面试题+笔试题](http://www.mianwww.com/html/category/it-interview/ruby)
 * [ruby笔试题](http://www.jobui.com/mianshiti/it/ruby/?n=1)
 * Ruby中的对象模型  ???
+
+* Ruby Array和Hash常见方法使用  ???
+
 * Ruby中类和模块的区别
   * 模块和类的区别在于，模块不能实例化，类不能include
 

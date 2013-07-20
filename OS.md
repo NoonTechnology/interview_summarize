@@ -12,3 +12,15 @@
   * 运行状态(Running)：进程占用处理器资源；处于此状态的进程的数目小于等于处理器的数目。  
     在没有其他进程可以执行时(如所有进程都在阻塞状态)，通常会自动执行系统的空闲进程  
   * 阻塞状态(Blocked)：当进程由于等待I/O操作或进程同步等条件而暂停运行时，它处于阻塞状态
+
+* Ruby中实现线程同步
+  [Link1](http://blog.csdn.net/weixingstudio/article/details/7797509)
+
+  * 互斥(Mutual Exclusion) 每个希望访问共享数据的线程首先必须对数据加锁,锁用Mutex对象表示  
+    example: source/OS/mutex.rb
+
+  * 条件变量(Condition Variables)  
+    example: source/OS/condition_variable.rb
+
+  * 监管数据交接的Queue 当队列为空时,dep方法会阻塞  
+    example: source/OS/queue.rb
