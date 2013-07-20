@@ -83,7 +83,10 @@
 * [Ruby方法访问权限](http://blog.csdn.net/magneto7/article/details/9150445)
   * **public**       可以被任何实例对象调用，不存在访问控制；
   * **protected**    可以被定义它的类和其子类访问，可以在类中或子类中指定给实例对象； ????
-  * **private**      可以被定义它的类和其子类访问，不能被实例对象调用。
+  * **private**      可以被定义它的类和其子类访问，不能被实例对象调用。  
+                     不能有显式调用，也就是不能有接受者,不能self.define_method这样调用  
+                     私有方法是可以被继承的  
+                     私有方法可以被send强制调用，如：send(:private_method)  
   方法默认都是公有的（initialize方法除外，它永远是私有的）
 
   代码：source/Ruby面试题/方法访问权限.rb
@@ -109,6 +112,7 @@
 * 用过哪些元编程技术
   * 闭包
   * 打开类
+  * [define_method](http://anleb.iteye.com/blog/1613912) define_method是Object的私有类方法,也就是只有类才可以调用
 
 * Ruby格式化输出
   "%d %s" % [2,'simlegate'] # => "2 simlegate"

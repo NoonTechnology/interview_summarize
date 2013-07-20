@@ -1,8 +1,11 @@
 * [绿色线程(Green Thread)和操作系统线程(Native Thread)](http://blog.csdn.net/perfe_ct/article/details/6704995)  
   内核线程（也叫"原生线程[native threads]"）  
+
 * 线程和进程  
   [操作系统中的进程与线程](http://www.cnblogs.com/CareySon/archive/2012/05/04/ProcessAndThread.html)  
+  Ruby中线程可查看<Ruby编程语言9.9章>  
   实现文章的LiveWriter的例子
+
 * [进程与线程状态](http://tanteng.sinaapp.com/2011/10/state/)  
   * 就绪状态(Ready)：进程已获得除处理器外的所需资源，等待分配处理器资源；只要分配了处理器进程就可执行。就绪进程可以按多个优先级来划分队列。  
     例如，当一个进程由于时间片用完而进入就绪状态时，排人低优先级队列；当进程由I／O操作完成而进入就绪状态时，排入高优先级队列
