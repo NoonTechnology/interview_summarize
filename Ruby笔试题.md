@@ -96,6 +96,16 @@
   * 反之,File.open在发生异常时会自动关闭file
   * 反之,File.open返回的结果为代码块的值
 
+* [include和extend的区别](http://vincent253.iteye.com/blog/135213)
+  * include主要用来将一个模块插入（mix）到一个类或者其它模块。 
+  * extend 用来在一个**对象**（object，或者说是instance）中引入一个模块，这个对象从而也具备了这个模块的方法,而且是对象的单例方法。  
+    s = 'simlegate' ; s.extend(M)  # => M中的方法编程s的单例方法
+
+* require,load,autoload的区别
+  * require可载入某个a.rb文件，且可以省略".rb"，而且它只会在第一次的时候载入，若再次"require"时就会忽略
+  * load载入时需要用a.rb全名, 且每次一定会重新载入 
+  * autoload 是只有需要的时候才会用上。
+
 * 用过哪些元编程技术
   * 闭包
   * 打开类
