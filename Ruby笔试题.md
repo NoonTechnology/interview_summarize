@@ -7,6 +7,8 @@
 * Ruby中类和模块的区别
   * 模块和类的区别在于，模块不能实例化，类不能include
 
+* [instance_eval 和class_eval 区别](http://ruby-china.org/topics/2442)
+
 * [Ruby中的字符串与符号](http://blog.csdn.net/besfanfei/article/details/7966987)
   * 字符串和符号，都是Ruby中表示文本的方式
   * 相同的符号是一个对象，相同的字符并不一定是一个对象
