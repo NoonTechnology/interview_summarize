@@ -8,6 +8,8 @@
   * 模块和类的区别在于，模块不能实例化，类不能include
 
 * [instance_eval 和class_eval 区别](http://ruby-china.org/topics/2442)
+  * class_eval针对类来说,就好像打开class操作一样,和class关键字所作的一样
+  * instance_eval 打开instance的单例类
 
 * [Ruby中的字符串与符号](http://blog.csdn.net/besfanfei/article/details/7966987)
   * 字符串和符号，都是Ruby中表示文本的方式
@@ -118,6 +120,8 @@
   * 闭包
   * 打开类
   * [define_method](http://anleb.iteye.com/blog/1613912) define_method是Object的私有类方法,也就是只有类才可以调用
+    * 说明define_method定义的方法和def定义没区别，都可以被继承 
+    * define_method的方法是存在于类中的实例方法 
 
 * Ruby格式化输出
   "%d %s" % [2,'simlegate'] # => "2 simlegate"
@@ -127,3 +131,9 @@
 
 * 感叹号方法调用
   不带感叹号的方法返回调用该方法的对象的一个**修改过的拷贝**，而带感叹号的方法则是一个可变方法，该方法会**修改原对象**。
+
+* Ruby很轻松地支持多种编程范例
+  * 纯粹的面向对象的类型
+  * 面向过程范式
+    开发人员可以在任何类或者函数外面编写代码，也可以在任何类外面编写函数。(Ruby悄悄把这些函数添加到了“对象”类，在后台维持面向对象的特性。)
+  * 函数式范式
