@@ -28,12 +28,12 @@
   * **DIP （Dependence Inversion Principle) 依赖倒转原则**  
 抽象不应该依赖于实现细节，实现细节应该依赖于抽象；高层不应该依赖于底层，都应该依赖于抽象。针对接口编程： 应该用接口或者抽象类声明变量、方法参数、方法返回类型等。 
 
- * **（Liskov Substitution Principle）里氏代换原则**   
+  * **（Liskov Substitution Principle）里氏代换原则**   
 子类型完全可以替换父类型，而不需要任何修改，并且获得期望的结果。 
 
- * **ISP （Interface Segregation Principle）接口隔离原则**  
+  * **ISP （Interface Segregation Principle）接口隔离原则**  
 客户端不应该可以访问不需要的方法，这些不需要的方法是一种有害的耦合性。 
 所以应该设计多个专门接口而不是单个复杂的接口，客户端仅依赖最小的接口类型。 
 
- * **CARP （Composite/Aggregate Reuse Principle）合成/聚合复用原则**  
+  * **CARP （Composite/Aggregate Reuse Principle）合成/聚合复用原则**  
 多聚合、少继承，实现复用性。聚合的复用是一种封闭性的复用，被复用者对复用者隐藏了自身细节，而继承是一种开放性的复用，子类可以获取父类型相关的细节，破坏了封闭性。
