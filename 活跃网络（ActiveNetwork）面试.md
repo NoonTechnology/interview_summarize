@@ -27,6 +27,9 @@
 
 
 ### include和extende的区别？
+ * include 包涵，聚合，组合的关系，可以多个， include后是类的实例方法
+ * extende 继承关系，只能一个，extend是变成类方法
+ * 模块不能实例化，类不能include
 
 ### 分析过Ruby、Rails 源码？ Ruby的底层实现？
 
