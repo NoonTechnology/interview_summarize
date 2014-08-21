@@ -38,8 +38,20 @@
  * 比如我们每次使用rails c, rails s等，相关命令后的流程，深入理解？
  
 ### Rails本身自带了哪些缓存？有哪些缓存方法？
- * key <-> value ，key在Rails中是什么？
+ * key <-> value ，key在Rails中是什么？，  id 和 updated_at 
  
+### Rails 自带缓存有哪些？
+* 页面缓存
+* 动作缓存
+* 片段缓存
+* 底层缓存
+* SQL 缓存
+* http://guides.ruby-china.org/caching_with_rails.html#activesupport::cache::memcachestore
+* http://rails-everyday.group.iteye.com/group/wiki/1160
+
+
+
+
 ### Rails中只读一个字段，或者累加某一个field的关键字是什么？
 
 ### 符合和字符串的区别是什么？
@@ -49,6 +61,7 @@
 * 由于字符串变量必须具有各种修改其内容的功能，所以字符串的维护和处理的开销就很大
 
 ### 网页优化，从前端到后端有哪些方式？
+* https://github.com/NoonTechnology/interview_summarize/blob/master/%E5%94%B1%E5%90%A7%E9%9D%A2%E8%AF%95.md
 
 ### 说我github上面的项目有些混杂
 
