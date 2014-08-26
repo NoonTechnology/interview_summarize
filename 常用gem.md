@@ -41,6 +41,10 @@
 * ruby-pinyin
 * factory_girl_rails
 * debugger
+* capistrano
+* whenever
+* sidekiq
+* doorkeeper
 
 
 
