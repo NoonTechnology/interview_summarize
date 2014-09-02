@@ -42,10 +42,11 @@
 * factory_girl_rails
 * debugger
 * capistrano
-* whenever
 * sidekiq
 * doorkeeper
-
+* rails-api
+* rabl
+* jbuilder
 
 
 
